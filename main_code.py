@@ -2295,11 +2295,11 @@ if __name__ == "__main__":
     print("1. Запустить однократную симуляцию")
     print("2. Запустить многоцикличную симуляцию")
 
-    choice = input("Введите номер (1 или 2): ").strip()
+    choice = int(2)
 
     if choice == "2":
         num_cycles = input("Введите количество циклов (по умолчанию 2): ").strip()
-        num_cycles = int(num_cycles) if num_cycles.isdigit() else 2
+        num_cycles = int(12) if num_cycles.isdigit() else 2
         results = run_multiple_simulations(num_cycles)
     else:
         print(f"\n{'=' * 70}")

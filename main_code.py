@@ -23,7 +23,7 @@ CLUSTER_RADIUS = 0.2| units.parsec
 ECCENTRICITY = 0.6
 INCLINATION = 5.0
 
-SIMULATION_END = 0.03 | units.Myr
+SIMULATION_END = 2.5 | units.Myr
 DIAGNOSTIC_DT = 0.001| units.Myr
 BRIDGE_TIMESTEP = 0.001 | units.Myr
 PH4_WORKERS = 3
@@ -2295,7 +2295,7 @@ if __name__ == "__main__":
     print("1. Запустить однократную симуляцию")
     print("2. Запустить многоцикличную симуляцию")
 
-    choice = int(2)
+    choice = str(2)
 
     if choice == "2":
         num_cycles = input("Введите количество циклов (по умолчанию 2): ").strip()

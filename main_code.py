@@ -23,7 +23,7 @@ CLUSTER_RADIUS = 0.2| units.parsec
 ECCENTRICITY = 0.6
 INCLINATION = 5.0
 
-SIMULATION_END = 2.5 | units.Myr
+SIMULATION_END = 0.03 | units.Myr
 DIAGNOSTIC_DT = 0.001| units.Myr
 BRIDGE_TIMESTEP = 0.001 | units.Myr
 PH4_WORKERS = 3
@@ -858,10 +858,10 @@ def create_3d_animation(result_dir, animation_positions, animation_times, animat
         all_y.extend(frame['y'])
         all_z.extend(frame['z'])
 
-    max_range = max(max(all_x) - min(all_x), max(all_y) - min(all_y), max(all_z) - min(all_z)) * 0.5
-    mid_x = (max(all_x) + min(all_x)) * 0.5
-    mid_y = (max(all_y) + min(all_y)) * 0.5
-    mid_z = (max(all_z) + min(all_z)) * 0.5
+    max_range = max(max(all_x) - min(all_x), max(all_y) - min(all_y), max(all_z) - min(all_z)) * 0.2
+    mid_x = (max(all_x) + min(all_x)) * 0.2
+    mid_y = (max(all_y) + min(all_y)) * 0.2
+    mid_z = (max(all_z) + min(all_z)) * 0.2
 
     ax.set_xlim(mid_x - max_range, mid_x + max_range)
     ax.set_ylim(mid_y - max_range, mid_y + max_range)
@@ -1533,7 +1533,7 @@ def run_simulation_cycle(cycle_num, total_cycles, base_params=None):
 
 def run_multiple_simulations(num_cycles=2):
     print(f"\n{'=' * 70}")
-    print(f"ЗАПУСК МНОГОЦИКЛОВОЙ СИМУЛЯЦИИ ({num_cycles} циклов)")
+    print(f"ЗАПУСК МНОГОЦИКЛИЧНОЙ СИМУЛЯЦИИ ({num_cycles} циклов)")
     print(f"{'=' * 70}")
 
     base_params = {
@@ -2293,7 +2293,7 @@ if __name__ == "__main__":
 
     print("\nВыберите режим работы:")
     print("1. Запустить однократную симуляцию")
-    print("2. Запустить многокyкловую симуляцию")
+    print("2. Запустить многоцикличную симуляцию")
 
     choice = input("Введите номер (1 или 2): ").strip()
 

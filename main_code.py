@@ -625,7 +625,7 @@ def save_statistical_plots(result_dir, diagnostic_data, animation_positions, ani
     ax.set_title('Эволюция типов объектов')
     ax.legend(loc='best')
     ax.grid(True, alpha=0.3)
-    ax.set_ylim(bottom=0, top=100)
+    ax.set_ylim(bottom=0, top=40)
 
     ax = axes[1, 0]
     ax.plot(diagnostic_data['times'], diagnostic_data['velocity_dispersion'], 'g-', linewidth=2)
@@ -858,10 +858,10 @@ def create_3d_animation(result_dir, animation_positions, animation_times, animat
         all_y.extend(frame['y'])
         all_z.extend(frame['z'])
 
-    max_range = max(max(all_x) - min(all_x), max(all_y) - min(all_y), max(all_z) - min(all_z)) * 0.2
-    mid_x = (max(all_x) + min(all_x)) * 0.2
-    mid_y = (max(all_y) + min(all_y)) * 0.2
-    mid_z = (max(all_z) + min(all_z)) * 0.2
+    max_range = max(max(all_x) - min(all_x), max(all_y) - min(all_y), max(all_z) - min(all_z)) * 0.05
+    mid_x = (max(all_x) + min(all_x)) * 0.05
+    mid_y = (max(all_y) + min(all_y)) * 0.05
+    mid_z = (max(all_z) + min(all_z)) * 0.05
 
     ax.set_xlim(mid_x - max_range, mid_x + max_range)
     ax.set_ylim(mid_y - max_range, mid_y + max_range)
@@ -2296,7 +2296,7 @@ if __name__ == "__main__":
     print("=" * 70)
     
     # Запускаем 19 циклов последовательно
-    NUM_CYCLES = 19
+    NUM_CYCLES = 15
     results = run_multiple_simulations(NUM_CYCLES)
     
     print(f"\nВсе 19 циклов симуляции завершены!")
@@ -2306,3 +2306,7 @@ if __name__ == "__main__":
             print(f"  Цикл {i:2d}: {dir_path}")
     else:
         print("Нет сохраненных результатов.")
+
+
+
+

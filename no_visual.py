@@ -1806,7 +1806,7 @@ if __name__ == "__main__":
     print("=" * 70)
 
     # Запускаем 19 циклов последовательно
-    NUM_CYCLES = 8
+    NUM_CYCLES = 10
     results = run_multiple_simulations(NUM_CYCLES)
 
     print(f"\nВсе 7 циклов симуляции завершены!")

@@ -31,7 +31,7 @@ INCLINATION = 5.0
 SIMULATION_END = 2.5 | units.Myr
 DIAGNOSTIC_DT = 0.001| units.Myr
 BRIDGE_TIMESTEP = 0.001 | units.Myr
-PH4_WORKERS = 3
+PH4_WORKERS = 2
 
 COLLISION_RADIUS_FACTOR = 2.0
 ACCRETION_RADIUS_FACTOR = 15.0
@@ -2297,14 +2297,14 @@ if __name__ == "__main__":
     print("=" * 70)
     
     print("\n" + "=" * 70)
-    print("ЗАПУСК КАСКАДА ИЗ 19 ЦИКЛОВ")
+    print("ЗАПУСК КАСКАДА ИЗ 7 ЦИКЛОВ")
     print("=" * 70)
     
     # Запускаем 19 циклов последовательно
-    NUM_CYCLES = 15
+    NUM_CYCLES = 7
     results = run_multiple_simulations(NUM_CYCLES)
     
-    print(f"\nВсе 19 циклов симуляции завершены!")
+    print(f"\nВсе 7 циклов симуляции завершены!")
     if results:
         print(f"Результаты сохранены в следующих папках:")
         for i, dir_path in enumerate(results, 1):

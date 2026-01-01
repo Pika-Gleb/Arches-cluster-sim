@@ -1,9 +1,23 @@
 import os
 
-os.environ["OMP_NUM_THREADS"] = "2"
-os.environ["OPENBLAS_NUM_THREADS"] = "2"
-os.environ["MKL_NUM_THREADS"] = "2"
-os.environ["NUMEXPR_NUM_THREADS"] = "2"
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+os.environ["NUMEXPR_NUM_THREADS"] = "1"
+os.environ["VECLIB_MAXIMUM_THREADS"] = "1"
+os.environ["NUMBA_NUM_THREADS"] = "1"
+
+os.environ["MKL_DYNAMIC"] = "FALSE"
+os.environ["MKL_NUM_THREADS"] = "1"
+
+os.environ["OMP_DYNAMIC"] = "FALSE"
+os.environ["OMP_NESTED"] = "FALSE"
+os.environ["OMP_PROC_BIND"] = "TRUE"
+
+os.environ["BLIS_NUM_THREADS"] = "1"
+os.environ["GOTO_NUM_THREADS"] = "1"
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+
 
 os.environ["OMPI_MCA_rmaps_base_oversubscribe"] = "true"
 

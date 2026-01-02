@@ -1,9 +1,9 @@
 import os
 
-os.environ["OMP_NUM_THREADS"] = "1"
-os.environ["OPENBLAS_NUM_THREADS"] = "1"
-os.environ["MKL_NUM_THREADS"] = "1"
-os.environ["NUMEXPR_NUM_THREADS"] = "1"
+os.environ["OMP_NUM_THREADS"] = "3"
+os.environ["OPENBLAS_NUM_THREADS"] = "3"
+os.environ["MKL_NUM_THREADS"] = "3"
+os.environ["NUMEXPR_NUM_THREADS"] = "3"
 
 os.environ["OMPI_MCA_rmaps_base_oversubscribe"] = "true"
 
@@ -29,7 +29,7 @@ INCLINATION = 5.0
 SIMULATION_END = 2.5 | units.Myr
 DIAGNOSTIC_DT = 0.001 | units.Myr
 BRIDGE_TIMESTEP = 0.001 | units.Myr
-PH4_WORKERS = 2
+PH4_WORKERS = 8
 
 COLLISION_RADIUS_FACTOR = 2.0
 ACCRETION_RADIUS_FACTOR = 15.0

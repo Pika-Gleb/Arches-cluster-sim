@@ -1,4 +1,10 @@
 import os
+
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["OPENBLAS_NUM_THREADS"] = "1"
+os.environ["MKL_NUM_THREADS"] = "1"
+os.environ["NUMEXPR_NUM_THREADS"] = "1"
+
 os.environ["OMPI_MCA_rmaps_base_oversubscribe"] = "true"
 
 import numpy as np
@@ -1800,7 +1806,7 @@ if __name__ == "__main__":
     print("=" * 70)
 
     # Запускаем 19 циклов последовательно
-    NUM_CYCLES = 5
+    NUM_CYCLES = 7
     results = run_multiple_simulations(NUM_CYCLES)
 
     print(f"\nВсе 7 циклов симуляции завершены!")

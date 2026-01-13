@@ -1,0 +1,5 @@
+time_Myr,collision_id,primary_type,secondary_type,primary_mass,secondary_mass,q_value,total_mass,retain_frac,hydrogen_factor,new_mass,bh_probability,remnant_type,spectral_label,mass_loss_percent,metallicity,recipe_type,collision_count,is_merger,event_type
+0.001,1,O6-8 V,Unclassified,48.48,30.39,0.626856435644,78.87,0.65026193056,0.7,51.2861584633,0.0813428217822,Merged Star,Merged,34.973806944,0.008,O,1,False,normal_collision
+0.002,2,O6-8 V,Unclassified,48.48,30.39,0.626856435644,78.87,0.65026193056,0.7,51.2861584633,0.0813428217822,Merged Star,Merged,34.973806944,0.008,O,1,False,normal_collision
+0.003,3,Merged,Unclassified,51.2861584633,30.39,0.592557542046,81.6761584633,0.46495455952,0.5,37.9757022816,0.109627877102,Merged Star,Merged,53.504544048,0.008,Merged,2,True,normal_collision
+0.004,4,Unclassified,Unclassified,30.39,30.39,1.0,60.78,0.4625,0.5,28.11075,0.1,Merged Star,Merged,53.75,0.008,Unclassified,1,False,normal_collision

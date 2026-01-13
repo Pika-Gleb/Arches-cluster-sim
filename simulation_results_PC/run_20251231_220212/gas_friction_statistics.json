@@ -1,0 +1,10 @@
+{
+  "total_events": 2130670,
+  "total_accel_kms_Myr": 1587.880256644059,
+  "max_accel_kms_Myr": 0.07049795459877044,
+  "avg_accel_kms_Myr": 0.0007452492674342151,
+  "drag_coefficient": 1,
+  "coulomb_log": 8.0,
+  "density_profile": "central_molecular_zone",
+  "avg_friction_accel_km_s_Myr": 0.0007442963499099003
+}

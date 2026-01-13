@@ -1,0 +1,20 @@
+time_Myr,collision_id,primary_type,secondary_type,primary_mass,secondary_mass,q_value,total_mass,retain_frac,hydrogen_factor,new_mass,bh_probability,remnant_type,spectral_label,mass_loss_percent,metallicity,recipe_type,collision_count,is_merger,event_type
+0.313,1,O6-8 V,Unclassified,48.48,30.39,0.626856435644,78.87,0.65026193056,0.7,51.2861584633,0.0813428217822,Merged Star,Merged,34.973806944,0.008,O,1,False,normal_collision
+0.624,2,O6-6.5 III,Unclassified,65.73,30.39,0.462345960749,96.12,0.654596837637,0.7,62.9198480337,0.103117298037,Merged Star,Merged,34.5403162363,0.008,O,1,False,normal_collision
+0.635,3,O6-8 V,Unclassified,48.48,30.39,0.626856435644,78.87,0.65026193056,0.7,51.2861584633,0.0813428217822,Merged Star,Merged,34.973806944,0.008,O,1,False,normal_collision
+0.668,4,O7-8 la+,Unclassified,63.73,30.39,0.476855484073,94.12,0.654087591453,0.7,61.5627241075,0.103842774204,Merged Star,Merged,34.5912408547,0.008,O,1,False,normal_collision
+0.886,5,O7-8 la+,Unclassified,63.73,30.39,0.476855484073,94.12,0.654087591453,0.7,61.5627241075,0.103842774204,Merged Star,Merged,34.5912408547,0.008,O,1,False,normal_collision
+0.901,6,O5.5-6 la,Unclassified,72.23,30.39,0.420739304998,102.62,0.656227274468,0.7,67.3420429059,0.14103696525,Merged Star,Merged,34.3772725532,0.008,O,1,False,normal_collision
+0.991,7,O5.5-6 la,Merged,72.23,62.9198480337,0.871104084642,135.149848034,0.647749139002,0.7,87.5431977,0.15,Black Hole,BH,35.2250860998,0.008,O,2,True,normal_collision
+1.102,8,BH,Unclassified,87.5431977,30.39,0.347142905427,117.9331977,1.0,1.0,117.9331977,1.0,Black Hole,BH,0.0,0.008,BH_accretion,3,True,BH accretion
+1.163,9,Merged,O7-8 III-V,61.5627241075,56.73,0.921499183514,118.292724108,0.462562589172,0.5,54.7177887434,0.15,Merged Star,Merged,53.7437410828,0.008,Merged,2,True,normal_collision
+1.17,10,Unclassified,Unclassified,30.39,30.39,1.0,60.78,0.4625,0.5,28.11075,0.1,Merged Star,Merged,53.75,0.008,Unclassified,1,False,normal_collision
+1.18,11,BH,O6-6.5 III,117.9331977,65.73,0.557349425623,183.6631977,1.0,1.0,183.6631977,1.0,Black Hole,BH,0.0,0.008,BH_accretion,4,True,BH accretion
+1.354,12,Unclassified,Unclassified,30.39,30.39,1.0,60.78,0.4625,0.5,28.11075,0.1,Merged Star,Merged,53.75,0.008,Unclassified,1,False,normal_collision
+1.381,13,BH,Unclassified,183.6631977,30.39,0.165465920122,214.0531977,1.0,1.0,214.0531977,1.0,Black Hole,BH,0.0,0.008,BH_accretion,5,True,BH accretion
+1.508,14,BH,Unclassified,214.0531977,30.39,0.141974052836,244.4431977,1.0,1.0,244.4431977,1.0,Black Hole,BH,0.0,0.008,BH_accretion,6,True,BH accretion
+1.531,15,BH,O5-6 V,244.4431977,29.46,0.120518796502,273.9031977,1.0,1.0,273.9031977,1.0,Black Hole,BH,0.0,0.008,BH_accretion,7,True,BH accretion
+1.79,16,BH,O5.5-6 la,273.9031977,72.23,0.263706304295,346.1331977,1.0,1.0,346.1331977,1.0,Black Hole,BH,0.0,0.008,BH_accretion,8,True,BH accretion
+1.866,17,BH,Unclassified,346.1331977,30.39,0.0877985706137,376.5231977,1.0,1.0,376.5231977,1.0,Black Hole,BH,0.0,0.008,BH_accretion,9,True,BH accretion
+1.877,18,Unclassified,Unclassified,30.39,30.39,1.0,60.78,0.4625,0.5,28.11075,0.1,Merged Star,Merged,53.75,0.008,Unclassified,1,False,normal_collision
+2.28,19,BH,Unclassified,376.5231977,30.39,0.0807121584689,406.9131977,1.0,1.0,406.9131977,1.0,Black Hole,BH,0.0,0.008,BH_accretion,10,True,BH accretion

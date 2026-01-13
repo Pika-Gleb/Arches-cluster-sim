@@ -1,0 +1,2 @@
+time_Myr,collision_id,primary_type,secondary_type,primary_mass,secondary_mass,q_value,total_mass,retain_frac,hydrogen_factor,new_mass,bh_probability,remnant_type,spectral_label,mass_loss_percent,metallicity,recipe_type,collision_count,is_merger,event_type
+5.62,1,O4-5 I-III,O4-5 I-III,39.73,39.73,1.0,79.46,0.6475,0.7,51.45035,0.1,Merged Star,Merged,35.25,0.008,O,1,False,normal_collision
